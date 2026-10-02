@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Roboto", sans-serif;
+}
+
+:root {
+
+    --bg-color-900: #000000;
+    --bg-color-600: #1F1F1F;
+
+    --text-color-100: #FFFFFF;
+
+    --text-hover-200: #F2F2F2;
+
+}
+
+body {
+    background-color: var(--bg-color-900);
+    color: var(--text-color-100);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0.9rem 2rem;
+    gap: 30px;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.header__icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.header__text {
+    text-decoration: none;
+    color: var(--text-color-100);
+    font-size: 1.1rem;
+    padding: 0 0 4px 0;
+    font-weight: 500;
+}
+
+.header__navbar {
+    margin-right: 15px;
+}
+
+.header__navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 0.8rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+
+.header__list-link--nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__serch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__btn-serch {
+    border: none;
+    background-color: transparent;
+}
+
+.header__icon-serch {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.header__info {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.header__info-btn {
+    padding: 4px 1.4rem;
+    border-radius: 2.5rem;
+    height: 2.2rem;
+    gap: 0.3em;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+}
+
+.header__info-btn--dark {
+    background-color: #1f1f1f;
+    color: var(--text-color-100);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: #2f2f2f;
+    }
+}
+
+
+.header__icon-flecha {
+    height: 16px;
+    width: 16px;
+}
+
+.header__info-btn--light a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.header__info-btn--light:hover {
+    transition: opacity 0.3s ease-in-out;
+    
+    &:hover {
+        opacity: 0.9;
+    }
+}
