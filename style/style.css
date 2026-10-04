@@ -84,9 +84,13 @@ body {
 }
 
 .header__icon-serch {
-    width: 15px;
-    height: 15px;
     cursor: pointer;
+    transition: stroke 0.3s ease-in-out;
+
+    &:hover {
+        stroke: #fff;
+    }
+
 }
 
 .header__info {
