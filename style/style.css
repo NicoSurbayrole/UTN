@@ -159,7 +159,6 @@ footer {
     align-items: center;
     gap: 2rem;
     padding: 0 1.5rem;
-    margin-bottom: 1rem;
 }
 
 .footer__redes-contain {
@@ -167,6 +166,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
+    font-size: 14px;
 }
 
 .footer__cookies-contain {
@@ -185,6 +185,7 @@ footer {
     text-underline-offset: 2px;
     background-color: transparent;
     color: #fff;
+    cursor: pointer;
 }
 
 .footer__btn-idioma {
@@ -209,12 +210,33 @@ footer {
     }
 }
 
-.footer__cookies-text {
+.footer__idioma-text {
     font-size: 14px;
 }
 
-.footer__cookies-subtext {
+.footer__idioma-subtext {
     color: #fff9;
     font-size: 14px;
     margin-left: 0.5rem;
+}
+
+@media (max-width: 804px) {
+    .footer__cookies-contain {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer__cookies-contain {
+        flex-direction: row;
+    }
+
+    .footer__cookies-text,
+    .footer__cookies-subtext {
+        font-size: 16px
+    }
 }
