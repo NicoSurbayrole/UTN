@@ -171,6 +171,7 @@ footer {
 
 .footer__cookies-contain {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
     font-size: 0.8125rem;
