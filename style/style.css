@@ -163,7 +163,17 @@ body {
     font-size: 0.890rem;
 }
 
+.header__info::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+}
+
 .header__info-btn--dark {
+    position: relative;
     color: var(--text-color-100);
     transition: all 0.3s ease-in-out;
     display: flex;
@@ -172,6 +182,47 @@ body {
     &:hover {
         background-color: #2f2f2f;
     }
+}
+
+.header__info:hover .header__list-dropdown {
+    display: block;
+}
+
+.header__list-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    list-style: none;
+    padding: 15px 0;
+    background-color: #ffffff10;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    display: none;
+}
+
+
+.header__link-drop {
+    text-align: start;
+    width: 80%;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.header__link-drop:hover {
+    background-color: #2f2f2f;
+}
+
+.header__link-drop a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8125rem;
+    width: 100%;
 }
 
 .header__info-btn--light {
