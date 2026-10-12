@@ -626,7 +626,7 @@ main {
 .soluciones__link-btn {
     text-decoration: none;
     width: 100%;
-    color: inherit;
+    color: #000000;
 }
 
 .soluciones__card-btn:hover {
