@@ -422,7 +422,7 @@ main {
     }
 
     .hero__title {
-        font-size:   3.2rem;
+        font-size: 3.2rem;
         line-height: 55px;
     }
 
@@ -439,7 +439,19 @@ main {
     }
 }
 
+@media(max-width: 870px) {
+    .hero__title {
+        font-size: 2.2rem;
+        line-height: 40px;
+    }
+}
+
 @media(max-width: 750px) {
+    .hero {
+        margin-top: 18rem;
+        min-height: 100vh;
+    }
+
     .hero__container {
         flex-direction: column;
     }
@@ -475,6 +487,22 @@ main {
     .hero__title {
         font-size: 2rem;
         line-height: 35px;
+    }
+}
+
+@media(max-width: 350px) {
+
+    .hero {
+        margin-top: 10rem;
+    }
+
+    .hero__title {
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+
+    .hero__btn--dark {
+        font-size: 0.7rem;
     }
 }
 
@@ -632,6 +660,11 @@ main {
 }
 
 @media (max-width: 766px) {
+
+    .soluciones__container {
+        margin-top: 10rem;
+    }
+
     .soluciones__card-container {
         padding-inline: 20px;
     }
@@ -647,8 +680,10 @@ main {
 
     .soluciones__title {
         font-size: 1.5rem;
+        margin-top: 5rem;
     }
 }
+
 
 @media(max-width:490px) {
     .soluciones__card {
@@ -656,6 +691,19 @@ main {
     }
 }
 
+@media(max-width: 350px) {
+    .soluciones__container {
+        margin-top: 4rem;
+    }
+
+    .soluciones__title {
+        font-size: 1.2rem;
+    }
+
+    .soluciones__card-btn {
+        font-size: 0.8rem;
+    }
+}
 
 
 /*--------------------------------------
