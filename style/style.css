@@ -249,6 +249,25 @@ body {
     display: none;
 }
 
+@media(min-width:1400px){
+    .header__icon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__text{
+        font-size: 1.5rem;
+    }
+
+    .header__list-link{
+        font-size: 1.1rem;
+    }
+
+    .header__icon-serch{
+        height: 20px;
+        width: 20px;
+    }
+}
 
 @media (max-width:1250px) {
     .header__navbar {
@@ -307,12 +326,8 @@ body {
                  MAIN Hero
 --------------------------------------*/
 
-main {
-    margin-bottom: 4rem;
-}
-
 .hero {
-    max-height: calc(100vh - 110px);
+    min-height: calc(100vh - 110px);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -415,6 +430,34 @@ main {
     border-radius: 10px;
 }
 
+@media(min-width:1600px) {
+    .hero__text {
+        justify-content: center;
+    }
+
+    .hero__span {
+        font-size: 2rem;
+    }
+
+    .hero__title {
+        font-size: 5rem;
+        line-height: 85px;
+    }
+
+    .hero__parrafo {
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+
+    .hero__btn {
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+
+    .hero__img {
+        height: 90%;
+    }
+}
 
 @media (max-width: 1240px) {
     .hero__span {
@@ -448,7 +491,7 @@ main {
 
 @media(max-width: 750px) {
     .hero {
-        margin-top: 18rem;
+        margin-top: 2rem;
         min-height: 100vh;
     }
 
@@ -480,6 +523,10 @@ main {
 
 @media(max-width:500px) {
 
+    .hero {
+        margin-top: 3rem;
+    }
+
     .hero__text {
         padding: 5px 0 0 5px;
     }
@@ -493,7 +540,7 @@ main {
 @media(max-width: 350px) {
 
     .hero {
-        margin-top: 10rem;
+        margin-top: 2rem;
     }
 
     .hero__title {
@@ -504,6 +551,10 @@ main {
     .hero__btn--dark {
         font-size: 0.7rem;
     }
+
+    .hero__img-contain {
+        padding: 0;
+    }
 }
 
 /*--------------------------------------
@@ -511,7 +562,7 @@ main {
 --------------------------------------*/
 
 .soluciones {
-    margin-top: 50px;
+    margin-top: 5rem;
     min-height: 100vh;
     width: 100%;
     align-content: center;
@@ -659,10 +710,56 @@ main {
     opacity: 0.85;
 }
 
+@media(min-width:1400px) {
+    .soluciones {
+        margin-top: 4rem;
+    }
+
+    .soluciones__card {
+        height: 800px;
+    }
+
+    .soluciones__card-title h3 {
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+
+    .soluciones__card-list {
+        p {
+            font-size: 1.4rem;
+            line-height: 30px;
+            margin: 20px 0;
+        }
+
+        ul {
+            gap: 40px;
+        }
+
+        li {
+            font-size: 1.2rem;
+        }
+    }
+
+    .soluciones__card-btn {
+        font-size: 1.4rem;
+        height: 3.5rem;
+    }
+}
+
+@media (max-width:900px) {
+    .soluciones {
+        margin-top: 8rem;
+    }
+}
+
 @media (max-width: 766px) {
 
+    .soluciones {
+        margin: 0;
+    }
+
     .soluciones__container {
-        margin-top: 10rem;
+        margin-top: 0rem;
     }
 
     .soluciones__card-container {
@@ -692,12 +789,18 @@ main {
 }
 
 @media(max-width: 350px) {
+
+    .soluciones {
+        margin-top: 0;
+    }
+
     .soluciones__container {
-        margin-top: 4rem;
+        margin-top: 0rem;
     }
 
     .soluciones__title {
         font-size: 1.2rem;
+        margin-top: 3rem;
     }
 
     .soluciones__card-btn {
@@ -716,7 +819,7 @@ footer {
     align-items: center;
     gap: 2rem;
     padding: 0 1.5rem;
-    margin: 100px 0 32px 0;
+    margin: 32px 0;
 }
 
 .footer__redes-contain {
@@ -777,6 +880,35 @@ footer {
     color: #fff9;
     font-size: 14px;
     margin-left: 0.5rem;
+}
+
+@media(min-width:1400px) {
+    .footer__redes-contain a svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer__cookies-contain,
+    .footer__btn-cookies {
+        font-size: 1.4rem;
+    }
+
+    .footer__btn-idioma {
+        height: 3.5rem;
+
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .footer__idioma-text {
+        font-size: 1.4rem;
+    }
+
+    .footer__idioma-subtext {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 804px) {
